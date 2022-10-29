@@ -20,11 +20,16 @@
                 <h2>Simule seu Empréstimo:</h2>
             </div>
             <div class="styleInput">
-                <input id="input" autocomplete="off" type="text" maxlength="18" placeholder="Digite seu CNPJ">
-                <input id="amount" type="text" placeholder="Valor do Empréstimo" onchange="Calculate()">
-                <input id="interest" type="number" placeholder="Juros ao mês %" onchange="Calculate()">
-                <input id="months" type="text" placeholder="Quantidade de meses" onchange="Calculate()">
-                <button id="button" type="button">calcular</button>
+                <p>Digite seu CNPJ:</p>
+                <p class="numbers">(Somente números)</p>
+                <input id="input" autocomplete="off" type="search" maxlength="18">
+                <p>Valor do Empréstimo:</p>
+                <input id="amount" type="number">
+                <p>Juros ao mês %:</p>
+                <input id="interest" value="3" type="number">
+                <p>Quantidade de meses:</p>
+                <input id="months" type="number">
+                <button id="button" onclick="Calculate()" type="button">calcular</button>
             </div>
             <div>
                 <h2 id="total"></h2><br>
