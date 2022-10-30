@@ -12,10 +12,8 @@
 
 <p align="center">
   <a href="#about">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#technologies">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#started">Preparando ambiente</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#use">Utilizando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#images">Imagens</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#technologies">Tecnologias</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#use">Utilizando</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 <div id="about"></div>
@@ -24,7 +22,7 @@
 
 O desafio consiste em reproduzir um protótipo de uma calculadora de empréstimos utilizando a lógica de programação, e retornando o valor de 3% de juros ao mês.
 
-Obs: Toda a lógica está documentada através de comentários no arquivo script.js.
+Toda a lógica está documentada através de comentários no arquivo script.js.
 
 <div id="technologies"></div>
 
@@ -43,17 +41,12 @@ Tecnologias que utilizei para desenvolver o teste:
 
 
 ## 👨🏻‍💻 Utilizando
-Foi feito o deploy da aplicação:
+
+- Digite seu CNPJ;
+- Digite o valor do empréstimo;
+- Digite a quantidade de meses;
+
 https://calculadoradeemprestimos.vercel.app/
-
-<div id="images"></div>
-
-
-
-## 👨🏻‍💻 Imagens da aplicação:
-
-### Home
-![Home]![calculadoraDeEmprestimos](https://user-images.githubusercontent.com/101665823/198855758-76072053-72db-4530-acee-eaaf3cac93d4.png)
 
 
 ##
