@@ -6,6 +6,8 @@
 }
 
 h1 {
+    
+    
     color: #e6aa00;
     background-color: #00406e;
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -25,8 +27,8 @@ h2 {
 }
 
 #box {
-    width: 300px;
-    height: 300px;
+    width: 275px;
+    height: 275px;
     position: absolute;
     background-color: #00406e;
     top: 45%;

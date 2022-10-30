@@ -1,10 +1,11 @@
 
-// Funcionalidade para incrementar caracteres especiais durante a digitação
+// Funcionalidade para incrementar caracteres especiais durante a digitação do CNPJ
 
 const input = document.querySelector("#input");
 
 input.addEventListener('keypress', () => {
-
+    
+    
     // Se o tamanho do input for igual a 2 ou a 6 irá adicionar '.' 
     // Senao se o tamanho do input for igual a 10 irá adicionar '/'
     // Senao se o tamanho do input for igual a 15 irá adicionar '-'
@@ -25,8 +26,7 @@ function Calculate() {
 
     // Manipulando o DOM 
     // Utilizando querySelector para retornar o primeiro elemento dentro do documento
-    // Condicionais (if) adicionadas para que o input obtenha algum valor
-    // Se o campo do input não for preenchido retorne um alerta
+    // Condicionais (if) adicionadas para que o usuário digite algum valor no input
 
     const amount = document.querySelector("#amount").value;
 
@@ -45,31 +45,31 @@ function Calculate() {
     if(months === ''){
         return alert('Digite a quantidade de meses')
     };
+    
+    // Valor do juros / 100
+    const interest = rate/100
 
-    // Calculando o juros por mês
-    // Valor do empréstimo x Juros / Pela quantidade de meses
-
-    const interest = (amount * (rate * 0.01)) / months;
-
-
-    // Calculando o total
-    // Valor do empréstimo / Pela quantidade de meses + juros
-
-    const total = ((amount / months) + interest);
+    // Calculando juros compostos
+    // O valor do juros está fixo em 3% no código html.
+    // Utilizando o método Math.pow() eu consigo retornar um número que representa a base fornecida.
+    // (1 + Valor do juros) * Quantidade de meses.
   
-    // Calculando o valor total
-    // Total * Quantidade de meses
+    const total = amount * Math.pow((1 + interest), months);
 
-    const valueTotal = ((total * months));
+    // Calculando o valor total
+    // Valor total dividido pela quantidade de meses.
+
+    const valueMonth = ((total / months));
 
     // Manipulando o DOM 
-    // Utilizando querySelector para retornar o primeiro elemento dentro do documento
-    // Retornando o conteúdo através do método innerHtml
-    // Extraindo o valor de total e valor total
+    // Utilizando querySelector para retornar o primeiro elemento dentro do documento.
+    // Retornando o conteúdo através do método innerHtml.
+    // Extraindo o valor mensal e valor total.
     
-    document.querySelector("#total").innerHTML = "O valor do empréstimo para este CNPJ ficará por mês: R$" + total.toFixed(2);
+    document.querySelector("#total").innerHTML = "O valor do empréstimo para este CNPJ ficará por mês: R$" + valueMonth.toFixed(2);
 
-    document.querySelector("#valueTotal").innerHTML = "E o valor total ficará em: R$" + valueTotal.toFixed(2);
+    document.querySelector("#valueTotal").innerHTML = "E o valor total ficará em: R$" + total.toFixed(2);
 
 }
 
+ 
