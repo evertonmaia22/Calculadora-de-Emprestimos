@@ -5,6 +5,18 @@
     background-color: #e46c0a;
 }
 
+form{
+        background-color: #00406e;
+        
+    }
+span{
+    font-size: 11px;
+    background-color: #00406e;
+    color: #ffff;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+
+}
 h1 {
     
     
@@ -38,27 +50,21 @@ h2 {
     padding: 15px;
 }
 
-.styleInput {
+.styleForm {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    margin: 15px;
+    margin: -1.2px;
+    padding: 5px;
     background-color: #00406e;
-
-}
-p{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 13.5px;
-    background-color: #00406e;
-    color: #ffff;
-    padding: 1px;
     
 }
+
 input {
-    height: 17px;
-    width: 200px;
-    margin: 0;
+    height: 27px;
+    width: 220px;
+    margin: 5px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 12px;
     text-align: center;
@@ -82,13 +88,14 @@ input {
 }
 
 #button {
-    width: 80px;
-    height: 18px;
+    width: 100px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 12px;
     background-color: #00406e;
+    background: #00406e;
+    margin: 20px;
     border: 1px solid #ffff;
     color: #ffff;
     font-weight: 700;
@@ -107,14 +114,15 @@ input {
 
 #total{
     background-color: #e46c0a;
-    color: #ffff;
+    color: #ffd253;
+    margin:25px;
 }
 #valueTotal{
     background-color: #e46c0a;
-    color: #ffff;
+    color: #ffd253;
 }
 
-span{
+footer{
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: flex;
     align-items: center;

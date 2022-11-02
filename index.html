@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="images/itau.svg" rel="icon" type="image/x-icon" />
+    <link href="images/itauLogo.svg" rel="icon" type="image/x-icon" />
     <link href="style.css" rel="stylesheet">
     <title>Calculadora de Empréstimos</title>
 
@@ -15,21 +15,18 @@
 
     <div>
         <div id="box">
-            <div>
                 <h1>Itaú</h1>
                 <h2>Simule seu Empréstimo:</h2>
-            </div>
-            <div class="styleInput">
-                <p>Digite seu CNPJ:</p>
-                <p class="numbers">(Somente números)</p>
-                <input id="input" autocomplete="off" type="search" maxlength="18">
-                <p>Valor do Empréstimo:</p>
-                <input id="amount" type="number">
-                <input id="interest" value="3" type="number" hidden>
-                <p>Quantidade de meses:</p>
-                <input id="months" type="number">
-                <button id="button" onclick="Calculate()" type="button">calcular</button>
-            </div>
+            <form id="form">
+            <div class="styleForm">
+                    <input id="input" autocomplete="off" type="search" maxlength="18" placeholder="Digite seu CNPJ" onInput="CnpjValidade()">
+                    <span id="span-required"></span>  
+                    <input id="amount" type="number" placeholder="Valor do Empréstimo"> 
+                    <input id="interest" value="3" type="number" hidden>   
+                    <input id="months" type="number"  placeholder="Quantidade de meses">  
+                    <button id="button" onclick="Calculate()" type="button">calcular</button>     
+                </div>
+            </form>
             <div>
                 <h2 id="total"></h2><br>
                 <h2 id="valueTotal"></h2>
@@ -39,7 +36,7 @@
 
     </div>
     <script src="script.js"></script>
-    <span>® Banco Itaú S.A. Todos direitos reservados.</span>
+    <footer>® Banco Itaú S.A. Todos direitos reservados.</footer>
 </body>
 
 </html>
