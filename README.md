@@ -42,7 +42,7 @@ Tecnologias que utilizei para desenvolver o teste:
 
 ## 👨🏻‍💻 Utilizando
 
-- Digite seu CNPJ;
+- Digite seu CNPJ (Somente o '11.111.111/1111-11' está validado);
 - Digite o valor do empréstimo;
 - Digite a quantidade de meses;
 
